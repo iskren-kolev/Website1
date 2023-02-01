@@ -1,5 +1,5 @@
 body{
-	margin-top:119px;
+	margin-top:121.2px;
 	margin-left:0px;
 	background-image:url("../sources/bg1.jpg");
 	background-position: center;
@@ -8,14 +8,16 @@ body{
 }
 
 header {
-	margin-right:10px;
   text-align: center;  
   background-color: #cefad0;
   padding-top: 2px;
   padding-bottom: 2px;
   position: fixed;
   top: 0px; 
-  width: 100%;
+  width: 80%;
+  right:10%;  
+  border-radius: 20px;
+  border: 1px solid black;  
 } 
 
 h1 {	
@@ -30,16 +32,23 @@ h2 {
 } 
 
 section{
-	 margin-left:250px;
-	 margin-right:250px;
+	 margin-left:20%;
+	 margin-right:20%;
 }
 
 section, footer {
   padding: 10px 10px;
 }
 
-
-
+footer{
+	text-align: center;  
+	position:relative;
+	width:80%;
+	left:10%;
+	padding:0;
+	border-radius: 20px;
+	background-color: #cefad0;	
+}
 
 input[type='text'], input[type='email'] {
   //border: 1px solid #2F5A78;
@@ -79,16 +88,14 @@ section a:hover {
 	  margin-top:50px;
 }
 
-#copyright {
-  text-align: center;
-  background-color: #cefad0;
-}
-
 .topnav {
 	position:fixed;
-	width:100%;
+	left:10%;
+	width:80%;
 	overflow: hidden;
 	background-color: #333; 
+	border-radius: 20px;
+	border: 2px solid #cefad0; 
 }
 
 .topnav a {
@@ -124,7 +131,7 @@ section a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;

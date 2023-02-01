@@ -1,5 +1,5 @@
 body{
-	margin-top:119px;
+	margin-top:121.2px;
 	margin-left:0px;	
 	background-image:url("../sources/bg1.jpg");
 	background-position: center;
@@ -13,8 +13,11 @@ header {
   padding-top: 2px;
   padding-bottom: 2px;
   position: fixed;
-  top: 0px; 
-  width: 100%;
+  top: 0px;  
+  width: 80%; 
+  right:10%;  
+  border-radius: 20px;
+  border: 1px solid black; 
 } 
 
 h1 {	
@@ -29,12 +32,22 @@ h2 {
 } 
 
 section{
-	 margin-left:250px;
-	 margin-right:250px;
+	 margin-left:20%;
+	 margin-right:20%;
 }
 
 section, footer {
   padding: 10px 10px;
+}
+
+footer{
+	text-align: center;  
+	position:relative;
+	width:80%;
+	left:10%;
+	padding:0;
+	border-radius: 20px;
+	background-color: #cefad0;	
 }
 
 li {
@@ -54,12 +67,8 @@ th {
   color: #FFFFFF;
 } 
 
-#copyright {
-  text-align: center;
-  background-color: #cefad0;
-}
 #summaryh2{
-	margin-top:50px;
+	margin-top:80px;
 }
 
 .summary {
@@ -81,9 +90,12 @@ th {
 
 .topnav {
 	position:fixed;
-	width:100%;
+	right:10%;
+	width:80%;
 	overflow: hidden;
 	background-color: #333; 
+	border-radius: 20px;
+    border: 2px solid #cefad0;  
 }
 /*responsive hamburger menu*/
 .topnav a {
@@ -110,7 +122,7 @@ th {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -118,8 +130,8 @@ th {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
