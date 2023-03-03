@@ -30,6 +30,7 @@
         <?php include ('./modules/footer_module.php');?>
 
 		<script src="./javascript/hamburger_menu.js"></script>
+        <script src="./javascript/change_header_name.js"></script>
 
     </body>
 </html>

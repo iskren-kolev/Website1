@@ -117,10 +117,6 @@ section a:hover {
     background-color: #04AA6D;
 }
 
-#under_name_CV, #under_name_aboutme {
-    display:none;
-}
-
 .topnav .icon {
     display: none;
 }

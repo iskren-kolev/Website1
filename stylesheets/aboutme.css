@@ -102,10 +102,6 @@ footer{
     background-color: #04AA6D;
 }
 
-#under_name_contacts, #under_name_CV {
-    display:none;
-}
-
 .topnav .icon {
   display: none;
 }

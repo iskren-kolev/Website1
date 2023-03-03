@@ -116,10 +116,6 @@ th {
 #index {
   background-color: #04AA6D;
 }
-#under_name_contacts, #under_name_aboutme {
-    display:none;
-}
-
 
 .topnav .icon {
   display: none;
