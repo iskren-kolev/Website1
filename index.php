@@ -2,27 +2,20 @@
 <html>
 
 	<head>
-		<title>Iso's site</title>		
+		<title>Iso's site</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--take the hamburger icon from here-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./stylesheets/index.css">
+        <style>
+            <?php include "./stylesheets/index.css" ?>
+        </style>
 	</head>
 
-	<body>
-		<header>
-			<h1>Iskren Kolev</h1>
-			<p id="under_name">CV</p>
-		 </header>
+	<body id="page_identifier_1">
 
-		<div class="topnav" id="myTopnav">
-			<a href="./index.html" class="active">Home</a>
-			<a href="./contacts.html">Contact</a>
-			<a href="./aboutme.html">About me</a>
-			<a href="javascript:void(0);" class="icon">
-			<i class="fa fa-bars"></i>
-			</a>
-		</div>
+		<?php include ('./modules/header_module.php'); ?>
+
+		<?php include ('./modules/navigation_bar_module.php') ?>
 
 		<section>
 			<h2 id="summaryh2">Summary</h2>
@@ -63,9 +56,7 @@
 			</table>
         </section>
 		
-		<footer>
-			<p>Copyright &copy; Iskren Kolev</p>
-        </footer>
+		<?php include ('./modules/footer_module.php');?>
 
 		<script src="./javascript/hamburger_menu.js"></script>
 

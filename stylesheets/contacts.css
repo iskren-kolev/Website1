@@ -113,9 +113,12 @@ section a:hover {
     color: black;
 }
 
-.topnav a.active {
+#acontact {
     background-color: #04AA6D;
-    color: white;
+}
+
+#under_name_CV, #under_name_aboutme {
+    display:none;
 }
 
 .topnav .icon {

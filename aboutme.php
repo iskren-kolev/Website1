@@ -6,23 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--take the hamburger icon from here-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./stylesheets/index.css">
+        <style>
+            <?php include "./stylesheets/aboutme.css" ?>
+        </style>
 	</head>
 
-	<body>
-		<header>
-			<h1>Iskren Kolev</h1>
-			<p id="under_name">ABOUT ME</p>
-		 </header>
+	<body id="page_identifier_3">
+    <?php include ('./modules/header_module.php'); ?>
 
-		<div class="topnav" id="myTopnav">
-			<a href="./index.html" >Home</a>
-			<a href="./contacts.html">Contact</a>
-			<a href="./aboutme.html" class="active">About me</a>
-			<a href="javascript:void(0);" class="icon">
-			<i class="fa fa-bars"></i>
-			</a>
-		</div>
+    <?php include ('./modules/navigation_bar_module.php') ?>
 
 		<section>
 			<h2 id="summaryh2">About me</h2>
@@ -34,12 +26,10 @@
 			I like walks in the mountains and forests. 
 			My hobby is restoring old cars and motorbikes as well as repairing battery packs.</p>
         </section>
-		
-		<footer>
-			<p>Copyright &copy; Iskren Kolev</p>
-        </footer>
+
+        <?php include ('./modules/footer_module.php');?>
 
 		<script src="./javascript/hamburger_menu.js"></script>
 
-</body>
+    </body>
 </html>
