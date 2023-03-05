@@ -11,7 +11,7 @@
         </style>
 	</head>
 
-	<body id="page_identifier_3">
+	<body>
     <?php include ('./modules/header_module.php'); ?>
 
     <?php include ('./modules/navigation_bar_module.php') ?>
@@ -30,7 +30,6 @@
         <?php include ('./modules/footer_module.php');?>
 
 		<script src="./javascript/hamburger_menu.js"></script>
-        <script src="./javascript/change_header_name.js"></script>
 
     </body>
 </html>
