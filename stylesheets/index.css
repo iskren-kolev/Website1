@@ -1,6 +1,6 @@
 body{
 	margin-top:121.2px;
-	margin-left:0px;	
+	margin-left:0px;
 	background-image:url("../sources/bg1.jpg");
 	background-position: center;
     background-repeat: no-repeat;
@@ -8,28 +8,28 @@ body{
 }
 
 header {
-  text-align: center;  
+  text-align: center;
   background-color: #cefad0;
   padding-top: 2px;
   padding-bottom: 2px;
   position: fixed;
-  top: 0px;  
-  width: 80%; 
-  right:10%;  
+  top: 0px;
+  width: 80%;
+  right:10%;
   border-radius: 20px;
-  border: 1px solid black; 
-} 
+  border: 1px solid black;
+}
 
-h1 {	
+h1 {
   text-transform: uppercase;
 }
 
-h2 {	
+h2 {
   color: #2F5A78;
   font-size: 20px;
   padding-bottom: 2px;
   border-bottom: 1px solid #2F5A78;
-} 
+}
 
 section{
 	 margin-left:20%;
@@ -41,31 +41,31 @@ section, footer {
 }
 
 footer{
-	text-align: center;  
+	text-align: center;
 	position:relative;
 	width:80%;
 	left:10%;
 	padding:0;
 	border-radius: 20px;
-	background-color: #cefad0;	
+	background-color: #cefad0;
 }
 
 li {
   margin-bottom: 5px;
   color: #2F5A78;
-} 
+}
 
-table { 
-  border-collapse: collapse; 
-} 
-td, th { 
-  border:1px solid #000000; 
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border:1px solid #000000;
   padding: 5px;
-} 
-th { 
-  background-color: #2F5A78; 
+}
+th {
+  background-color: #2F5A78;
   color: #FFFFFF;
-} 
+}
 
 #summaryh2{
 	margin-top:80px;
@@ -79,7 +79,7 @@ th {
 .summary img {
   float: right;
   margin-right:50px;
-  margin-left:50px;  
+  margin-left:50px;
 }
 
 .summary img:hover{
@@ -93,9 +93,9 @@ th {
 	right:10%;
 	width:80%;
 	overflow: hidden;
-	background-color: #333; 
+	background-color: #333;
 	border-radius: 20px;
-    border: 2px solid #cefad0;  
+    border: 2px solid #cefad0;
 }
 /*responsive hamburger menu*/
 .topnav a {
@@ -113,9 +113,8 @@ th {
   color: black;
 }
 
-.topnav a.active {
+#index {
   background-color: #04AA6D;
-  color: white;
 }
 
 .topnav .icon {
