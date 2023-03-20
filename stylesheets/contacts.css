@@ -113,9 +113,8 @@ section a:hover {
     color: black;
 }
 
-.topnav a.active {
+#acontact {
     background-color: #04AA6D;
-    color: white;
 }
 
 .topnav .icon {
