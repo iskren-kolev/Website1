@@ -11,7 +11,7 @@
         </style>
 	</head>
 
-	<body">
+	<body>
     <?php include ('./modules/header_module.php'); ?>
 
     <?php include ('./modules/navigation_bar_module.php') ?>
