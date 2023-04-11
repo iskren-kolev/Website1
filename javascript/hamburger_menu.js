@@ -5,7 +5,7 @@ hamburger_button.addEventListener('click', open_hamburger_menu);
 
 //to open the hamburger menu
 function open_hamburger_menu() {
-  var x = document.getElementById("myTopnav");
+  let x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {

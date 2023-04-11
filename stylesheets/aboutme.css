@@ -15,29 +15,22 @@ header {
   position: fixed;
   top: 0px;  
   width: 80%; 
-  right:10%;  
+  right:10%;
   border-radius: 20px;
   border: 1px solid black; 
-} 
-
-h1 {	
-  text-transform: uppercase;
 }
 
-h2 {	
-  color: #2F5A78;
-  font-size: 20px;
-  padding-bottom: 2px;
-  border-bottom: 1px solid #2F5A78;
-} 
-
 section{
-	 margin-left:20%;
+     margin-left:20%;
 	 margin-right:20%;
 }
 
 section, footer {
   padding: 10px 10px;
+}
+img{
+    width:80px;
+    height: 80px;
 }
 
 footer{
@@ -47,24 +40,17 @@ footer{
 	left:10%;
 	padding:0;
 	border-radius: 20px;
-	background-color: #cefad0;	
+	background-color: #cefad0;
 }
 
 
 
 #summaryh2{
+    color: #2F5A78;
+    font-size: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #2F5A78;
 	margin-top:80px;
-}
-
-.summary {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.summary img {
-  float: right;
-  margin-right:50px;
-  margin-left:50px;  
 }
 
 .summary img:hover{
