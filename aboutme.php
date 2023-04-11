@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Iso's site</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--take the hamburger icon from here-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            <?php include "./stylesheets/aboutme.css" ?>
-        </style>
-	</head>
+    <!--including HEAD module-->
+    <?php include ('./modules/head.php');?>
 
 	<body>
         <?php include ('./modules/header_module.php'); ?>
@@ -21,6 +14,8 @@
         </section>
         <?php include ('./modules/footer_module.php');?>
 		<script src="./javascript/hamburger_menu.js"></script>
+		<script src="./javascript/highlightActivePage.js"></script>
         <script src="./javascript/countdown.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>
