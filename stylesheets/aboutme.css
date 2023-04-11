@@ -1,5 +1,5 @@
 body{
-	margin-top:121.2px;
+	margin-top:121.1px;
 	margin-left:0px;	
 	background-image:url("../sources/bg1.jpg");
 	background-position: center;
@@ -13,7 +13,7 @@ header {
   padding-top: 2px;
   padding-bottom: 2px;
   position: fixed;
-  top: 0px;  
+  top: 0;
   width: 80%; 
   right:10%;
   border-radius: 20px;
@@ -37,7 +37,9 @@ section, footer {
 img{
     width:80px;
     height: 80px;
+    display: none;
 }
+
 
 footer{
 	text-align: center;  
@@ -48,8 +50,6 @@ footer{
 	border-radius: 20px;
 	background-color: #cefad0;
 }
-
-
 
 #summaryh2{
     color: #2F5A78;
@@ -63,7 +63,6 @@ footer{
 	transition: transform 1s ease-out;
     transform: scale(2.3);
 }
-
 
 .topnav {
 	position:fixed;
