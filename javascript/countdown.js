@@ -4,6 +4,7 @@ let timerSection = document.getElementById("timer_section");
 
 let displayButton = document.createElement("button");
 displayButton.textContent="Reset";
+displayButton.id="resetButton";
 let displayPicture=document.createElement("img");
 displayPicture.src=src="./sources/pic_of_me.jpg";
 
