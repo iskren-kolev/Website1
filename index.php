@@ -5,8 +5,6 @@
 
 	<body>
 		<?php include ('./modules/header_module.php'); ?>
-		<?php include ('./modules/navigation_bar_module.php') ?>
-
         <section class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">

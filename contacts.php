@@ -5,7 +5,6 @@
 
 	<body>
     <?php include ('./modules/header_module.php'); ?>
-    <?php include ('./modules/navigation_bar_module.php') ?>
 
         <section>
             <h2 id="contact-formh2">Contact Form</h2>
