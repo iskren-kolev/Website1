@@ -20,4 +20,3 @@ foreach ($pages as $title => $url) {
 
 // Output the page title
 echo '<span id="under_name">' . $pageTitle . '</span>';
-?>
