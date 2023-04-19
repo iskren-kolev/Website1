@@ -1,36 +1,51 @@
-document.getElementById("prev").addEventListener("click",prev);
-document.getElementById("next").addEventListener("click",next);
-let img_num = document.getElementById("img_slider").getElementsByTagName("img").length;
-let num = 0;
-let img = document.getElementById("img_slider").getElementsByTagName("img")[num];
-let dot = document.getElementById("dots").getElementsByTagName("span")[num];
-img.style.display="inline";
-dot.setAttribute("id","active");
+let sliders = document.querySelectorAll(".image_slider_box");
 
-function change_pic_and_dot() {
-    img = document.getElementById("img_slider").getElementsByTagName("img")[num];
-    img.style.display = "inline";
-
-    dot.removeAttribute("id");
-    dot = document.getElementById("dots").getElementsByTagName("span")[num];
-    dot.setAttribute("id","active");
-
-    clearInterval(callEveryFiveSeconds);
-    callEveryFiveSeconds=setInterval(next,5000);
-}
-function next() {
-    if(num<img_num-1) {
-        img.style.display="none";
-        num++;
-        change_pic_and_dot();
+class ImageSliderBox {
+    constructor(imageSliderBox) {
+        this.imageSliderBox = imageSliderBox;
+        this.img_length = this.imageSliderBox.getElementsByTagName("img").length;
+        this.num = 0;
+        this.img = this.imageSliderBox.getElementsByTagName("img")[this.num];
+        this.prevButton = this.imageSliderBox.querySelector('.prev');
+        this.nextButton = this.imageSliderBox.querySelector('.next');
+        this.prevButton.addEventListener("click", () => this.prev());
+        this.nextButton.addEventListener("click", () => this.next());
+        this.dot = this.imageSliderBox.getElementsByTagName("span")[this.num];
+        this.img.style.display = "inline";
+        this.dot.setAttribute("id", "active");
+        this.dots = this.imageSliderBox.querySelector(".dots")
+        if (this.dots.id == "2") {
+            this.dots.style.display = "none";
+        }
     }
+
+    change_pic_and_dot() {
+        this.dot.removeAttribute("id");
+        this.img = this.imageSliderBox.getElementsByTagName("img")[this.num];
+        this.dot = this.imageSliderBox.getElementsByTagName("span")[this.num];
+        this.img.style.display = "inline";
+        this.dot.setAttribute("id", "active");
+        clearInterval(this.callEveryFiveSeconds);
+        this.callEveryFiveSeconds = setInterval(() => this.next(), 5000);
+    }
+
+    next() {
+        if (this.num < this.img_length - 1) {
+            this.img.style.display = "none";
+            this.num++;
+            this.change_pic_and_dot();
+        }
+    }
+
+    prev() {
+        if (this.num > 0) {
+            this.img.style.display = "none";
+            this.num--;
+            this.change_pic_and_dot();
+        }
+    }
+
+    callEveryFiveSeconds = setInterval(() => this.next(), 5000);
 }
 
-function prev() {
-    if(num>0) {
-        img.style.display="none";
-        num--;
-        change_pic_and_dot();
-    }
-}
-let callEveryFiveSeconds = setInterval(next, 2000) ;
+sliders.forEach(slider => new ImageSliderBox(slider));
