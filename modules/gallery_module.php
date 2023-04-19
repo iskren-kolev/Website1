@@ -27,7 +27,7 @@
         <img src="sources/wallpaper8.jpg"/>
         <button class="next">></button>
     </div>
-    <div class="dots" id="2">
+    <div class="dots" data-slider-options="nodots">
         <span></span>
         <span></span>
         <span></span>

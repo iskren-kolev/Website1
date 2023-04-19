@@ -14,7 +14,8 @@ class ImageSliderBox {
         this.img.style.display = "inline";
         this.dot.setAttribute("id", "active");
         this.dots = this.imageSliderBox.querySelector(".dots")
-        if (this.dots.id == "2") {
+        this.dataType = this.dots.getAttribute("data-slider-options");
+        if (this.dataType === "nodots") {
             this.dots.style.display = "none";
         }
     }
