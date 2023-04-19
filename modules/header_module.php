@@ -5,8 +5,8 @@
         <p id="under_name"></p>
     </header>
     <div class="topnav" id="myTopnav">
-        <?php include "./functions/showNavItems.php"?>
-        <?php showNavItems($pages, $pageTitle);?>
+        <?php include "./functions/showNavItems.php" ?>
+        <?php showNavItems($pages, $pageTitle); ?>
 
         <!--<a href="./index.php">Home</a>
         <a href="./contacts.php">Contact</a>
