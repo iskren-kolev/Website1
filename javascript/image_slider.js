@@ -15,11 +15,13 @@ class ImageSliderBox {
         this.dot.setAttribute("id", "active");
         this.dots = this.imageSliderBox.querySelector(".dots")
         this.dataType = this.dots.getAttribute("data-slider-options");
+        this.setOptions();
+    }
+    setOptions() {
         if (this.dataType === "nodots") {
             this.dots.style.display = "none";
         }
     }
-
     change_pic_and_dot() {
         this.dot.removeAttribute("id");
         this.img = this.imageSliderBox.getElementsByTagName("img")[this.num];
@@ -48,5 +50,4 @@ class ImageSliderBox {
 
     callEveryFiveSeconds = setInterval(() => this.next(), 5000);
 }
-
 sliders.forEach(slider => new ImageSliderBox(slider));
