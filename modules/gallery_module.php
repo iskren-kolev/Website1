@@ -4,8 +4,10 @@
     <div class="img_slider">
         <button class="prev"><</button>
         <img src="sources/wallpaper1.jpg"/>
+        <h2>Заглавие 1</h2>
         <p>изображение 1</p>
         <img src="sources/wallpaper2.jpg"/>
+        <h2>Заглавие 2</h2>
         <p>изображение 2</p>
         <img src="sources/wallpaper3.jpg"/>
         <p>изображение 3</p>
@@ -28,6 +30,7 @@
     <div class="img_slider">
         <button class="prev"><</button>
         <img src="sources/wallpaper6.jpg"/>
+        <h2>Заглавие 1</h2>
         <p>изображение 1</p>
         <img src="sources/wallpaper7.jpg"/>
         <p>изображение 2</p>

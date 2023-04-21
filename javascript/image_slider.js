@@ -13,8 +13,15 @@ class ImageSliderBox {
         this.slider_options = this.imageSliderBox.getAttribute("data-slider-options");
         this.applyOptions();
     }
+
     hasOption(name) {
         return !!this.slider_options.includes(name);
+    }
+
+    hideTextHeader() {
+        if (this.textHeader) {
+            this.textHeader.style.display = "none";
+        }
     }
 
     applyOptions() {
@@ -25,7 +32,7 @@ class ImageSliderBox {
             let expression = /start-from-(\d+)/;
             let match = this.slider_options.match(expression);
             let startFrom = match ? parseInt(match[1]) : null;
-            if(startFrom<=this.img_length) {
+            if (startFrom <= this.img_length) {
                 this.num = startFrom - 1;
             }
         }
@@ -35,10 +42,14 @@ class ImageSliderBox {
     changePicAndDot() {
         this.img = this.imageSliderBox.getElementsByTagName("img")[this.num];
         this.dot = this.imageSliderBox.getElementsByTagName("span")[this.num];
+        this.textHeader = this.imageSliderBox.getElementsByTagName("h2")[this.num];
         this.textDescription = this.imageSliderBox.getElementsByTagName("p")[this.num];
 
         this.img.style.display = "inline";
         this.dot.setAttribute("id", "active");
+        if (this.textHeader) {
+            this.textHeader.style.display = "inline";
+        }
         this.textDescription.style.display = "inline";
         clearInterval(this.callEveryFiveSeconds);
         this.callEveryFiveSeconds = setInterval(() => this.next(), 5000);
@@ -63,12 +74,14 @@ class ImageSliderBox {
             this.num++;
             if (this.num < this.img_length) {
                 this.img.style.display = "none";
+                this.hideTextHeader();
                 this.textDescription.style.display = "none";
                 this.dot.removeAttribute("id");
                 this.changePicAndDot();
             } else {
                 this.num = 0;
                 this.img.style.display = "none";
+                this.hideTextHeader();
                 this.textDescription.style.display = "none";
                 this.dot.removeAttribute("id");
                 this.changePicAndDot();
@@ -77,6 +90,7 @@ class ImageSliderBox {
             if (this.num < this.img_length - 1) {
                 this.img.style.display = "none";
                 this.textDescription.style.display = "none";
+                this.hideTextHeader();
                 this.num++;
                 this.dot.removeAttribute("id");
                 this.changePicAndDot();
@@ -88,6 +102,7 @@ class ImageSliderBox {
     prev() {
         if (this.num > 0) {
             this.img.style.display = "none";
+            this.hideTextHeader();
             this.textDescription.style.display = "none";
             this.num--;
             this.dot.removeAttribute("id");
