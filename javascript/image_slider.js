@@ -18,12 +18,6 @@ class ImageSliderBox {
         return !!this.slider_options.includes(name);
     }
 
-    hideTextHeader() {
-        if (this.textHeader) {
-            this.textHeader.style.display = "none";
-        }
-    }
-
     applyOptions() {
         if (this.slider_options.includes("nodots")) {
             this.dots.style.display = "none";
@@ -40,17 +34,11 @@ class ImageSliderBox {
     }
 
     changePicAndDot() {
-        this.img = this.imageSliderBox.getElementsByTagName("img")[this.num];
         this.dot = this.imageSliderBox.getElementsByTagName("span")[this.num];
-        this.textHeader = this.imageSliderBox.getElementsByTagName("h2")[this.num];
-        this.textDescription = this.imageSliderBox.getElementsByTagName("p")[this.num];
-
-        this.img.style.display = "inline";
+        this.slide = this.imageSliderBox.getElementsByClassName("slide")[this.num];
+        this.slide.style.display = "inline";
         this.dot.setAttribute("id", "active");
-        if (this.textHeader) {
-            this.textHeader.style.display = "inline";
-        }
-        this.textDescription.style.display = "inline";
+
         clearInterval(this.callEveryFiveSeconds);
         this.callEveryFiveSeconds = setInterval(() => this.next(), 5000);
     }
@@ -70,27 +58,21 @@ class ImageSliderBox {
     }
 
     next() {
-        if (this.hasOption("infinate")) {
+        if (this.hasOption("infinite")) {
             this.num++;
             if (this.num < this.img_length) {
-                this.img.style.display = "none";
-                this.hideTextHeader();
-                this.textDescription.style.display = "none";
+                this.slide.style.display = "none";
                 this.dot.removeAttribute("id");
                 this.changePicAndDot();
             } else {
                 this.num = 0;
-                this.img.style.display = "none";
-                this.hideTextHeader();
-                this.textDescription.style.display = "none";
+                this.slide.style.display = "none";
                 this.dot.removeAttribute("id");
                 this.changePicAndDot();
             }
         } else {
             if (this.num < this.img_length - 1) {
-                this.img.style.display = "none";
-                this.textDescription.style.display = "none";
-                this.hideTextHeader();
+                this.slide.style.display = "none";
                 this.num++;
                 this.dot.removeAttribute("id");
                 this.changePicAndDot();
@@ -101,9 +83,7 @@ class ImageSliderBox {
 
     prev() {
         if (this.num > 0) {
-            this.img.style.display = "none";
-            this.hideTextHeader();
-            this.textDescription.style.display = "none";
+            this.slide.style.display = "none";
             this.num--;
             this.dot.removeAttribute("id");
             this.changePicAndDot();
