@@ -14,7 +14,6 @@
             <p>изображение 2</p>
         </div>
         <div class="slide">
-            <!--<img src="/sources/wallpaper3.jpg"/>-->
             <video autoplay loop muted poster="/sources/alt_bg_image.jpg">
                 <source src="sources/Hologram_Planet_by_nuva.mp4" type="video/mp4">
             </video>

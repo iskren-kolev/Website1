@@ -17,7 +17,6 @@ class ImageSliderBox {
     stopVideo() {
         if (this.slide.querySelector('video')) {
             this.slide.querySelector('video').pause();
-            console.log("video paused");
         }
     }
 
@@ -25,7 +24,6 @@ class ImageSliderBox {
         if (this.slide.querySelector('video')) {
             if (this.slide.querySelector('video').paused) {
                 this.slide.querySelector('video').play();
-                console.log("video play");
             }
         }
     }
@@ -58,8 +56,8 @@ class ImageSliderBox {
         this.hideShowArrows();
         this.startVideo();
 
-        clearInterval(this.callEveryFiveSeconds);
-        this.callEveryFiveSeconds = setInterval(() => this.next(), 5000);
+        //clearInterval(this.callEveryFiveSeconds);
+        //this.callEveryFiveSeconds = setInterval(() => this.next(), 5000);
     }
 
     hideShowArrows() {
@@ -112,7 +110,7 @@ class ImageSliderBox {
         }
     }
 
-    callEveryFiveSeconds = setInterval(() => this.next(), 5000);
+    //callEveryFiveSeconds = setInterval(() => this.next(), 5000);
 }
 
 sliders.forEach(slider => new ImageSliderBox(slider));
