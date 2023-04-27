@@ -6,6 +6,8 @@
 <body>
 <?php include('./modules/header_module.php'); ?>
 <?php include('./modules/gallery_module.php'); ?>
+<button id="modalButton">Click to open a modal</button>
+<?php include ('./modules/modal_module.php'); ?>
 
 <section class="accordion" id="accordionExample">
     <div class="accordion-item">
@@ -79,6 +81,7 @@
 
 <script src="./javascript/hamburger_menu.js"></script>
 <script src="./javascript/image_slider.js"></script>
+<script src="./javascript/modal_button.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
