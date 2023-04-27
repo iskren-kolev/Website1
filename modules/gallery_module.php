@@ -1,6 +1,6 @@
 <div id="margin"></div>
 
-<div class="image_slider_box" data-slider-options = "start-from-2">
+<div class="image_slider_box" data-slider-options="start-from-2">
     <div class="img_slider">
         <button class="prev"><</button>
         <div class="slide">
@@ -14,7 +14,9 @@
             <p>изображение 2</p>
         </div>
         <div class="slide">
-            <img src="/sources/wallpaper3.jpg"/>
+            <video autoplay loop muted poster="/sources/alt_bg_image.jpg">
+                <source src="sources/Hologram_Planet_by_nuva.mp4" type="video/mp4">
+            </video>
             <h1>Хедър 3</h1>
             <p>изображение 3</p>
         </div>
